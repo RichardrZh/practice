@@ -1,8 +1,16 @@
+import java.util.HashSet;
+
 class Solution {
+
+    /**
+     * Finds the length of the longest substring for a given string.
+     * @param s A string.
+     * @return The length of the longest substring in s.
+     */
     public int lengthOfLongestSubstring(String s) {
 
         // init a 'seen' set for charcters that we have seen before
-        HashSet<Character> seen = new HashSet<Character>(); 
+        HashSet<Character> seen = new HashSet<Character>();
 
         // init pointers for a sliding window
         int p1 = 0;
